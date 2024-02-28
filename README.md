@@ -26,7 +26,7 @@ The comprehensive software EAS solution.
 
 ## Installation
 >[!WARNING]
-This system currently only runs on MacOS and Linux.
+This system currently only runs on MacOS and Linux, Crostini also works.
 
 If you are running the Compiled ASMARA Binary, skip to step 2.
 

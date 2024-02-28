@@ -25,6 +25,7 @@ The comprehensive software EAS solution.
 
 
 ## Installation
+>[!WARNING]
 This system currently only runs on MacOS and Linux.
 
 If you are running the Compiled ASMARA Binary, skip to step 2.
@@ -53,7 +54,8 @@ git clone https://github.com/cbs228/sameold.git
 cd sameold
 cargo install --path crates/samedec
 ```
-> NOTE: Add RUST to path with `source $HOME/.cargo/env` after CURL, otherwise restart your terminal or log out/in before installing sameold, otherwise cargo will not work.
+> [!IMPORTANT]
+> Add RUST to path with `source $HOME/.cargo/env` after CURL, otherwise restart your terminal or log out/in before installing sameold, otherwise cargo will not work.
 
 ### Step 3
 Test ASMARA's config generation by running
@@ -98,14 +100,16 @@ For the lowest verbosity, run `-q` for quiet mode.
 
 ### Config Files:
 Adding a file on to the end of the executable after all flags will set that file as a config file.
-> Note: Must be a valid ASMARA config file for that version. Using an incompatible file may cause problems, and-or corruption of the said file.
+>[!NOTE]
+>Must be a valid ASMARA config file for that version. Using an incompatible file may cause problems, and-or corruption of the said file.
 
 Example:
 ```
 python3 asmara.py -vvvv .config2
 ```
 to use `.config2` as the selected config file. If the file does not exist, it will be created.
-> Note: The config file *must* always come after the flags. Adding a flag after the config file may result in unexpected behavior.
+>[!NOTE]
+>The config file *must* always come after the flags. Adding a flag after the config file may result in unexpected behavior.
 
 ## Changelog
 DO LATER
